@@ -19,7 +19,6 @@ insert into instruct  values ('22222','Einstein','Physics',95000);
 
 insert into instruct values ('32343','EI Said','History',60000);
 
-
 insert into instruct values ('33456','Gold','Physics',87000);
 
 

@@ -22,7 +22,6 @@ insert into instructor  values ('22222','Einstein','Physics',95000);
 
 insert into instructor values ('32343','EI Said','History',60000);
 
-
 insert into instructor values ('33456','Gold','Physics',87000);
 
 
@@ -32,14 +31,16 @@ select dept_name from instructor;
 ----group by clause
 
 select name from instructor group by name;
-select dept_name,avg(salary) as AVG from instructor group by dept_name;
+select dept_name,avg(salary) as AVG 
+	from instructor group by dept_name;
 
-select dept_name,count(*) from instructor  group by dept_name;
+select dept_name,count(*) as cout from instructor  group by dept_name;
 
 
 
 ------having clause
-select dept_name,avg(salary) as AVG from instructor group by dept_name having avg(salary)>70000;
+select dept_name,avg(salary) as AVG 
+	from instructor group by dept_name having avg(salary)>70000;
 
 ----order by clause
 select * from instructor order by salary asc,name desc;

@@ -8,6 +8,7 @@ CREATE TABLE employees (
   age INT,
   salary FLOAT
 );
+select *from employees;
 INSERT INTO employees VALUES (1, 'Alice', 25, 5000), (2, 'Bob', 30, 8000), (3, 'Charlie', 35, 6500);
 --Count Function:
 SELECT COUNT(*) FROM employees;
